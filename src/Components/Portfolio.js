@@ -4,8 +4,10 @@ const Portfolio = ({ data }) => {
   if (data) {
     var projects = data.projects.map(function (projects) {
       var projectImage = "images/portfolio/" + projects.image;
+
       return (
         <div key={projects.title} className="columns portfolio-item">
+          <h1>project name</h1>
           <div className="item-wrap">
             <a href={projects.url} title={projects.title}>
               <img alt={projects.title} src={projectImage} />

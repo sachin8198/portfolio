@@ -18,11 +18,7 @@ const About = ({ data }) => {
     <section id="about">
       <div className="row">
         <div className="three columns">
-          <img
-            className="profile-pic"
-            src={profilepic}
-            alt="Sonny's Profile Pic"
-          />
+          <img className="profile-pic" src={profilepic} alt="Sachin" />
         </div>
         <div className="nine columns main-col">
           <h2>About Me</h2>
@@ -47,7 +43,13 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/images/Resume.pdf"
+                  // href={resumeDownload}
+                  className="button"
+                >
                   <i className="fa fa-download"></i>Download Resume
                 </a>
               </p>

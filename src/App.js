@@ -25,7 +25,7 @@ const App = () => {
     <div className="App">
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
-      <Resume data={resumeData.resume} />
+      {/* <Resume data={resumeData.resume} /> */}
       <Portfolio data={resumeData.portfolio} />
       <Testimonials data={resumeData.testimonials} />
       <Contact data={resumeData.main} />
